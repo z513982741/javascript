@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>indexOf和lastIndexOf索引</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript">
+		// 第一个参数：要查找的项，（ps:第一个参加数据类型要一样才能查找）第二个参数：查找起点的索引位置
+		// indexOf是从数组的开头开始查找   
+		// lastIndexOf是从数组的末尾开始查找   
+		var arr = ['0','1','2','3','4'];
+		var arr1 = arr.indexOf("2",2)
+		var arr2 = arr.indexOf("2",3) // 因为从第3位起找不到2这个数字，所以是-1
+		var arr3 = arr.lastIndexOf("2",1) // 查找起点的索引位置前2位开始找）
+		var arr4 = arr.lastIndexOf("2",2) // 查找起点的索引位置（前3位开始找）
+		console.log("arr为："+arr+"\narr1为："+arr1+"\narr2为："+arr2+"\narr3为："+arr3+"\narr4为："+arr4)
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

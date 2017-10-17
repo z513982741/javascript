@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>slice截取</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript">
+		var arr = ['red','yellow','green','purple','black'];
+		var arr1 = arr.slice(1);   // 只有一个参数,返回从该参数指定位置开始到末尾的所有项
+		var arr2 = arr.slice(1,4); // 两个参数,返回从第一个参数开始到结果位置之前的块。  (ps：其实返回的是1、2、3 [4]不会返回)
+		var arr3 = arr.slice(-2,-1); // 如果是负数，则用数组长度加上该数来确定相应的位置
+		console.log("arr为："+arr+"\narr1为："+arr1+"\narr2为："+arr2+"\narr3为："+arr3);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

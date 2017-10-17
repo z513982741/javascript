@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sort升序</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript">
+		// function compare (value1, value2) {
+		// 	if (value1 < value2) {
+		// 		return 1;
+		// 	} else if (value1 > value2) {
+		// 		return -1;
+		// 	} else {
+		// 		return 0;
+		// 	}
+		// }
+
+		function compare (value1, value2) {
+			return value1 - value2; // 数组前一个值减后一个值，等于负数，侧从小排到大
+		}
+
+		function compare1 (value1, value2) {
+			return value2 - value1; // 数组后一个值减前一个值，等于负数，侧从大排到小
+		}
+
+		var arr = ['0','1','10','5','15'];
+		console.log("原数组为："+arr);
+		arr.sort();
+		console.log("sort后的数组："+arr);
+		arr.sort(compare);
+		console.log("sort(compare)后的数组："+arr);
+		arr.sort(compare1);
+		console.log("sort(compare1)后的数组："+arr);
+		
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

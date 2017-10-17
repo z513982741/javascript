@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>splice超级索引</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript">
+		// 第一个参数：要删除的位置，第二个参数：要删除的项数。 第三个参数：要插入的项
+		// splice只返回删除项，不会返回新的数组
+		var arr = ['red','yellow','green','purple','black'];
+		console.log("arr为："+arr);
+		var arr1 = arr.splice(0,2);   // 第一个参数：要删除的位置，第二个参数：要删除的项数。  （从第0个开始，删除后两项）
+		console.log("\narr为："+arr+"\narr1为："+arr1);
+		var arr2 = arr.splice(2,0,"添加颜色1","添加颜色2");   // 第一个参数：要删除的位置，第二个参数：要删除的项数。 第三个参数：要插入的项  (从第0个开始，删除后0项,添加两个项)
+		console.log("\narr为："+arr+"\narr2为："+arr2);
+		var arr3 = arr.splice(1,2,'替换yellow',"替换green"); // 第一个参数：要删除的位置，第二个参数： 要删除的项数。 第三个参数：要插入的项 (从第1个开始，删除后2项，添加两个项)
+		console.log("\narr为："+arr+"\narr3为："+arr3);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
